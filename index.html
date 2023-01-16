@@ -1,0 +1,200 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="Jekyll v4.0.1" name="generator"/>
+    <title>
+      Checkout example · Basepair
+    </title>
+    <link href="https://getbootstrap.com/docs/4.5/examples/checkout/" rel="canonical"/>
+    <!-- Basepair core CSS -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <meta content="#563d7c" name="theme-color"/>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.5/examples/checkout/form-validation.css" rel="stylesheet"/>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="72" src="https://www.basepairtech.com/wp-content/uploads/2019/08/logohalfx.png">
+          <h2>
+            Checkout form
+          </h2>
+          <p class="lead">
+            Below is an example form. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+            It's required to develop a test for this view to check that the validation works as expected.
+          </p>
+        </img>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">
+            Billing address
+          </h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">
+                  First name
+                </label>
+                <input class="form-control" id="firstName" pattern="[A-Za-z]+" placeholder="" required="" type="text" value="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </input>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">
+                  Last name
+                </label>
+                <input class="form-control" id="lastName" pattern="[A-Za-z]+" placeholder="" required="" type="text" value="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </input>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email">
+                Email
+                <span class="text-muted">
+                  (Optional)
+                </span>
+              </label>
+              <input class="form-control" id="email" placeholder="you@example.com" required="" type="email">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </input>
+            </div>
+            <div class="mb-3">
+              <label for="address">
+                Address
+              </label>
+              <input class="form-control" id="address" pattern="(\d+)(\s[A-Za-z]+)+"  placeholder="1234 Main St" required="" type="text">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </input>
+            </div>
+            <div class="mb-3">
+              <label for="address2">
+                Address 2
+                <span class="text-muted">
+                  (Optional)
+                </span>
+              </label>
+              <input class="form-control" id="address2" placeholder="Apartment or suite" type="text">
+              </input>
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">
+                  Country
+                </label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">
+                    Choose...
+                  </option>
+                  <option>
+                    United States
+                  </option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">
+                  State
+                </label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">
+                    Choose...
+                  </option>
+                  <option>
+                    California
+                  </option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">
+                  Zip
+                </label>
+                <input class="form-control" id="zip" pattern="[0-9]{5}" placeholder="" required="" type="text">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </input>
+              </div>
+            </div>
+            <hr class="mb-4">
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="save-info" required="" type="checkbox">
+                  <label class="custom-control-label" for="save-info">
+                    Term and conditions
+                  </label>
+                </input>
+              </div>
+              <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">
+                  Submit
+                </button>
+              </hr>
+            </hr>
+          </form>
+        </div>
+      </div>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">
+          © 2017-2020 Company Name
+        </p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">
+              Privacy
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              Terms
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              Support
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/4.5/examples/checkout/form-validation.js">
+    </script>
+  </body>
+</html>
